@@ -556,3 +556,24 @@ footer {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.frame{
+  position: relative;
+  overflow: hidden;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 149, 243, 0.9);
+  color: var(--primary-white-color);
+  top: 0;
+  left: 0;
+  padding: 87px 20px;
+  align-items: center;
+  display: flex;
+  transform: translateY(100%);
+  transition: transform ease-in 0.25s;
+}
+.tarjetas-portafolio:hover .frame .overlay{
+  transform: translateY(0);
+}
