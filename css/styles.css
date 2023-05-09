@@ -571,7 +571,7 @@ footer {
   padding: 87px 20px;
   align-items: center;
   display: flex;
-  transform: translateY(100%);
+  transform: translateY(calc(100% + 3px));
   transition: transform ease-in 0.25s;
 }
 .tarjetas-portafolio:hover .frame .overlay{
