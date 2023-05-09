@@ -53,10 +53,13 @@
       </div>
     </header>
     <main>
+      <section class="backdrop is-hidden" data-backdrop>
+        <form action="" class="modal-form" data-modal></form>
+      </section>
       <!-- SOLICITE NUESTRO SERVICIO -->
       <section class="solicite-nuestro-servicio">
           <h1 class="soluciones-efectivas-para-su-negocio">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-          <button type="button" class="boton">Solicite nuestro servicio</button>
+          <button type="button" class="boton" data-modal-open>Solicite nuestro servicio</button>
       </section>
       <!-- SOLUCIONES EFECTIVAS PARA SU NEGOCIO -->
       <section class="section-informacion">
@@ -456,5 +459,6 @@
         </section>
       </div>
     </footer>
+    <script src="./js/events.js"></script>
   </body>
 </html>

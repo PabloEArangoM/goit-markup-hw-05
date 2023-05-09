@@ -64,6 +64,7 @@ li {
 }
 button {
   cursor: pointer;
+  z-index: 5;
 }
 h2 {
   font-family: "Roboto", sans-serif;
@@ -273,6 +274,40 @@ footer {
 
 /* INDEX MAIN */
 
+/* SECTION BACKDROP */
+.backdrop{
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(0,0%,0%,0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 10;
+  transition: opacity .25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backdrop.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-form{
+  width: 528px;
+  height: 581px;
+  background-color: var(--primary-white-color);
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 
+  transform cubic-bezier(0.4, 0, 0.2, 1) .25s,
+  opacity cubic-bezier(0.4, 0, 0.2, 1) .25s;
+}
+.modal-form.is-hidden{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 /* section solicite-nuestro-servicio */
 .boton {
   color: var(--primary-white-color);
@@ -289,6 +324,7 @@ footer {
   padding-top: 10px;
   padding-left: 24px;
   padding-right: 24px;
+  z-index: 5;
 }
 .solicite-nuestro-servicio {
   background-color: var(--footer-background);
@@ -298,6 +334,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: 5;
 }
 .soluciones-efectivas-para-su-negocio {
   max-width: 696px;
@@ -305,6 +342,7 @@ footer {
   padding-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
+  z-index: 5;
 }
 
 /* section section-informacion */
